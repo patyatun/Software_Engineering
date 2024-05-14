@@ -20,7 +20,7 @@ The complete source and documentation can be found in the following GitHub Repos
 ### Execution instructions
 1. Clone or download the repository to your local machine.
 2. Make sure you have Python 3.x installed on your system.
-3. Run the OurCoffee.py file to start the application.
+3. Run the Coffee.py file to start.
 4. Select the desired quantity of each type of beverages.
 5. Click the "Total" button to get the total order cost.
 6. Click the "Receipt" button to get the receipt with the details.
@@ -30,11 +30,15 @@ The complete source and documentation can be found in the following GitHub Repos
 ### 1. Git
 Before this project, I had only used GitHub's website for simple tasks like creating repositories, making commits and opening pull requests. This project was my first time using Git on my computer, which helped me understand version control better. I now feel more confident in managing bigger projects with Git.
 
-For this project, I used Git to manage my code and track changes. Here's how I did it:
+For this project, I used Git to manage my code and track changes. I also have integrated draw.io with GitHub to directly add and manage diagrams from there. 
+You cand find the details of how I used Git here: [1. GIT]()
 
 ### 2. UML
+You can find the details here: [2. UML](https://github.com/patyatun/Software_Engineering/tree/main/2.%20UML)
 1. Use-Case diagram: I created this diagram to represent the different interactions between users (actors) and the system. Also to visualize additional funtionalities beyond what is currently implemented in my code. It serves as a draft for a more advanced system.
-2. 
+2. Sequence diagram: The diagram shows the different interactions between the user (employee) and the actions.
+3. Class diagram: I did this diagram using gleek.io to show how are related the different classes and their elements.
+   
 ### 3. DDD
 ### 4. Metrics
 ### 5. Clean Code Development
