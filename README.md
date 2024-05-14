@@ -28,6 +28,10 @@ The complete source and documentation can be found in the following GitHub Repos
    
 
 ### 1. Git
+Before this project, I had only used GitHub's website for simple tasks like creating repositories, making commits and opening pull requests. This project was my first time using Git on my computer, which helped me understand version control better. I now feel more confident in managing bigger projects with Git.
+
+For this project, I used Git to manage my code and track changes. Here's how I did it:
+
 ### 2. UML
 ### 3. DDD
 ### 4. Metrics
