@@ -33,6 +33,8 @@ Before this project, I had only used GitHub's website for simple tasks like crea
 For this project, I used Git to manage my code and track changes. Here's how I did it:
 
 ### 2. UML
+1. Use-Case diagram: I created this diagram to represent the different interactions between users (actors) and the system. Also to visualize additional funtionalities beyond what is currently implemented in my code. It serves as a draft for a more advanced system.
+2. 
 ### 3. DDD
 ### 4. Metrics
 ### 5. Clean Code Development
