@@ -1,5 +1,5 @@
 #import libraries
-from tkinter import *
+from tkinter import Tk, Frame, Label, LabelFrame, Text, Entry, Button, Checkbutton, IntVar, StringVar, DISABLED, NORMAL, END, RIDGE, TOP, LEFT, Y, RIGHT, W, BOTTOM
 from tkinter import filedialog, messagebox
 import random
 import time
