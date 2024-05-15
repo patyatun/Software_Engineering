@@ -158,8 +158,8 @@ def grantotal():
     t_GuavaJasmin= int(textGuavaJasmin.get())
     t_BlackLemon= int(textBlackLemon.get())
     t_MatchaLemon= int(textMatchaLemon.get())
-    varTeaCost= (t_Yuzu * 3.5) + (t_HintGinger * 3.5) + (t_JujubeGoji * 3.8) + (t_LycheeOolong * 4.5) + (t_GuavaJasmin * 4.5) + (t_BlackLemon * 4.5) + \
-        (t_MatchaLemon * 4.5)
+    varTeaCost= round((t_Yuzu * 3.5) + (t_HintGinger * 3.5) + (t_JujubeGoji * 3.8) + (t_LycheeOolong * 4.5) + (t_GuavaJasmin * 4.5) + (t_BlackLemon * 4.5) + 
+        (t_MatchaLemon * 4.5),2)
     checkboxTeaCost.config(state= NORMAL)
     checkboxTeaCost.delete(0, END)
     checkboxTeaCost.insert(0, varTeaCost)
@@ -169,7 +169,7 @@ def grantotal():
     t_Chocolate= int(textChocolate.get())
     t_MatchaLatte= int(textMatchaLatte.get())
     t_UbeOatLatte= int(textUbeOatLatte.get())
-    varNoncoffeCost= (t_Chocolate * 4) + (t_MatchaLatte * 4.5) + (t_UbeOatLatte * 4.8)
+    varNoncoffeCost= round((t_Chocolate * 4) + (t_MatchaLatte * 4.5) + (t_UbeOatLatte * 4.8), 2)
     checkboxNoncoffeeCost.config(state= NORMAL)
     checkboxNoncoffeeCost.delete(0, END)
     checkboxNoncoffeeCost.insert(0, varNoncoffeCost)
@@ -188,26 +188,26 @@ def grantotal():
     t_BlackSesamLatte= int(textBlackSesamLatte.get())
     t_InjeolmiOatLatte= int(textInjeolmiOatLatte.get())
     t_PistacchioOatLatte= int(textPistacchioOatLatte.get())
-    varCoffeeCost= (t_Espresso * 2) + (t_DoubleEspresso * 3) + (t_Americano * 2.5) + (t_Capuccino * 3.5) + (t_FlatWhite * 4) + (t_Latte * 3.8) + \
-        (t_Mocha * 4.5) + (t_BiscoffLatte * 4.5) + (t_DalgonaLatte * 4.9) + (t_BlackSesamLatte * 4.8) + (t_InjeolmiOatLatte * 5.2) + (t_PistacchioOatLatte * 5.4)
+    varCoffeeCost= round((t_Espresso * 2) + (t_DoubleEspresso * 3) + (t_Americano * 2.5) + (t_Capuccino * 3.5) + (t_FlatWhite * 4) + (t_Latte * 3.8) +
+        (t_Mocha * 4.5) + (t_BiscoffLatte * 4.5) + (t_DalgonaLatte * 4.9) + (t_BlackSesamLatte * 4.8) + (t_InjeolmiOatLatte * 5.2) + (t_PistacchioOatLatte * 5.4), 2)
     checkboxCoffeeCost.config(state= NORMAL)
     checkboxCoffeeCost.delete(0, END)
     checkboxCoffeeCost.insert(0, varCoffeeCost)
     checkboxCoffeeCost.config(state= DISABLED)
 
-    subtotal= varTeaCost + varNoncoffeCost + varCoffeeCost
+    subtotal= round(varTeaCost + varNoncoffeCost + varCoffeeCost, 2)
     checkboxSubtotal.config(state= NORMAL)
     checkboxSubtotal.delete(0, END)
     checkboxSubtotal.insert(0, subtotal)
     checkboxSubtotal.config(state= DISABLED)
 
-    iva= float(checkboxSubtotal.get())*0.12
+    iva= round(subtotal*0.16, 2)
     checkboxIVA.config(state= NORMAL)
     checkboxIVA.delete(0, END)
     checkboxIVA.insert(0, iva)
     checkboxIVA.config(state= DISABLED)
 
-    total= subtotal + iva
+    total= round(subtotal + iva, 2)
     checkboxTotal.config(state= NORMAL)
     checkboxTotal.delete(0, END)
     checkboxTotal.insert(0, total)
