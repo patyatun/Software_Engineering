@@ -30,8 +30,8 @@ The complete source and documentation can be found in the following GitHub Repos
 ### 1. Git
 Before this project, I had only used GitHub's website for simple tasks like creating repositories, making commits and opening pull requests. This project was my first time using Git on my computer, which helped me understand version control better. I now feel more confident in managing bigger projects with Git.
 
-For this project, I used Git to manage my code and track changes. I also have integrated draw.io with GitHub to directly add and manage diagrams from there. 
-You cand find the details of how I used Git here: [1. GIT]()
+For this project, I used Git to manage my code and track changes. I also have integrated draw.io with GitHub to directly add and manage diagrams from there. Morever, I connected SonarCloud with GitHub to perform a review of the metrics.
+You cand find the details of how I used Git here: [1. GIT](https://github.com/patyatun/Software_Engineering/tree/main/1.%20Git)
 
 ### 2. UML
 You can find the details here: [2. UML](https://github.com/patyatun/Software_Engineering/tree/main/2.%20UML)
@@ -44,6 +44,7 @@ You can find the details here: [2. UML](https://github.com/patyatun/Software_Eng
 ### 5. Clean Code Development
 ### 6. Build Management
 ### 7. Unit tests
+I included unit tests to ensure the proper functioning of the Coffee.py file. You can find the unit tests in the file [test_Coffee.py](https://github.com/patyatun/Software_Engineering/blob/main/test_Coffee.py)
 ### 8. Continuous delivery: Pipeline
 ### 9. IDE
 ### 10. DSL
