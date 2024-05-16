@@ -75,4 +75,10 @@ I utilized Visual Studio Code for this project due to my prior experience with i
 - **cmd + Shift + O**: display a list of symbols (functions, classes, variables) in the current file.
 
 ### 10. DSL
+As an additional feature to the management system, I implemented a Domain Specific Language to demonstrate how a custom language can be used to define and process the orders in a structured and readable manner. While not directly integrated into the main application, this DSL helped me understand the concept of create a domain specific language.
+
+The DSL is defined using regular expressions using re module in Python. The grammar rules speify the structure of a valid coffee order, consisting of an "Order:" keyword followed by a list of order items. Each order item is composed of a quantity and a product type (Tea, Non-Coffee, or Coffee). The *parse_order* function takes a string representing an order and analizes it according to the defined grammar rules. It then calculates the total cost based on the quantities and corresponding product prices.
+
+By leveraging a DSL, users can express coffee orders in an intuitive way, without having to navigate through a GUI. You can find the code here: [DSL](https://github.com/patyatun/Software_Engineering/blob/main/DSL_Coffee.py)
+
 ### 11. Functional programming
