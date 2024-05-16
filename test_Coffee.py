@@ -9,10 +9,8 @@ class TestCoffee(unittest.TestCase):
         self.root = Tk()
         self.root.withdraw()
         Coffee.receiptText = Text(self.root)
-        # Inicializa solo algunas variables necesarias para los tests
         Coffee.txtYuzu = StringVar(value="0")
         Coffee.txtHintGinger = StringVar(value="0")
-        Coffee.txtChocolate = StringVar(value="0")
         Coffee.txtEspresso = StringVar(value="0")
 
         Coffee.var1 = IntVar(value=0)
