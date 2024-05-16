@@ -42,9 +42,11 @@ You can find the details here: [2. UML](https://github.com/patyatun/Software_Eng
 ### 3. DDD
 ### 4. Metrics
 ### 5. Clean Code Development
+I've created a cheat sheet outlining the principles of how to write clean code and make a concious effort to follow this guideline while writing my code. You can find the cheat sheet here: [4. Clean Code Development](https://github.com/patyatun/Software_Engineering/tree/main/4.%20Clean%20Code%20Development)
+
 ### 6. Build Management
 ### 7. Unit tests
-I included unit tests to ensure the proper functioning of the Coffee.py file. You can find the unit tests in the file [test_Coffee.py](https://github.com/patyatun/Software_Engineering/blob/main/test_Coffee.py)
+I included unit tests to ensure the proper functioning of the Coffee.py file. You can find them in the file [test_Coffee.py](https://github.com/patyatun/Software_Engineering/blob/main/test_Coffee.py)
 ### 8. Continuous delivery: Pipeline
 ### 9. IDE
 ### 10. DSL
