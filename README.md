@@ -82,3 +82,21 @@ The DSL is defined using regular expressions using re module in Python. The gram
 By leveraging a DSL, users can express coffee orders in an intuitive way, without having to navigate through a GUI. You can find the code here: [DSL](https://github.com/patyatun/Software_Engineering/blob/main/DSL_Coffee.py)
 
 ### 11. Functional programming
+Following the guidelines, I wrote a code to apply the principles of functional programming. You can find the file here: [functional_programming.py](https://github.com/patyatun/Software_Engineering/blob/main/Functional_programming.py)
+
+- Only final structures: In the code, the *MenuItem* class is an immutable data structure representing a menu item with a name and price. This ensures that instances of *MenuItem* are final structures, meaning their state cannot be modified after creation.
+
+- Side-effect-free functions: The *filter_menu* and *sort_menu* functions are side-effect-free. They don't modify the original *menu* list but instead return a new filtered or sorted list, respectively. This adheres to the functional programming principle of avoiding side effects.
+
+- Higher-order functions: The *apply_discount* function is a higher-order function because it takes another function (discount_func) as a parameter and applies it to the given price.
+
+- Functions as parameters and return values: The *calculate_total* function takes a list of menu items and an optional discount function as parameters. It also returns the total cost after applying the discount, if provided. This demonstrates the use of functions as parameters and return values.
+
+- Closures/ anonymous functions: The *create_discount_func* function returns a lambda function (an anonymous function) that calculates the discounted price based on the provided discount rate. This lambda function is a closure because it captures and remembers the *discount_rate* value from the enclosing scope.
+
+- Example usage: I demonstrate how these functional programming concepts are applied:
+  1. The *filter_menu* function is used to filter the menu based on a category (e.g. "coffee")
+  2. The *sort_menu* function is used to sort the filtered menu by price in descending order.
+  3. The *calculate_total* function is used to calculate the total cost of an order, with the option to apply different discount functions (student discount, senior discount, or a custom discount created with *create_discount_func*).
+ 
+I was able to understand how to apply programming principles in a practical context. Even if this example is not directly integrated into the main system, it serves as an exercise to apply the principles of functional programming.
