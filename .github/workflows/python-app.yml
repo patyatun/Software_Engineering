@@ -2,36 +2,40 @@ name: Python application
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
+
+permissions:
+  contents: read
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python 3.10
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.11
       uses: actions/setup-python@v3
       with:
-        python-version: "3.10"
+        python-version: "3.11"
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest
+        pip install flake8 pytest pytest-cov
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Install xvfb
-      run: sudo apt-get install -y xvfb
-    - name: Start xvfb
+    - name: Lint with flake8
       run: |
-        sudo Xvfb :99 -screen 0 1024x768x24 &
-        sleep 3
-        echo "Started Xvfb"
-    - name: Run tests with pytest
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Test with pytest and coverage
       run: |
-        export DISPLAY=:99
-        echo "DISPLAY is set to $DISPLAY"
-        ps -ef | grep Xvfb  # Check if Xvfb is running
-        echo "Running pytest..."
-        pytest -v --maxfail=1 --durations=10 test_Coffee.py
+        pytest --cov-report term-missing --cov=your_module test_Coffee.py
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-report
+        path: ./htmlcov  # Assuming coverage reports are generated in htmlcov directory
