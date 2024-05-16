@@ -58,8 +58,14 @@ I runned the tests and they all passed successfully.
 ![image](https://github.com/patyatun/Software_Engineering/assets/78238491/b9c28106-ecbf-4f01-bbdc-9062aba696de)
 
 ### 8. Continuous delivery: Pipeline
+I used GitHub Actions as a continuos integration and deployment (CI/CD) tool, I decided to use this one because allows me to automate custom workflowa directly from my GitHub repository. I created a configuration file named python-app.yml in the .github/workflows/ folder that defines the steps to follow in the pipeline. You can find it here: [.github](https://github.com/patyatun/Software_Engineering/tree/main/.github)
+The workflow is triggered everytime a push is made to the repository.
+
+You can see that the workflow is running correctly.
+![image](https://github.com/patyatun/Software_Engineering/assets/78238491/edaa3b76-6df9-4505-bc2c-8bba7ae674b7)
+
 ### 9. IDE
-I utilize Visual Studio Code for this project due to my prior experience with it in other classes, such as Big Data. I find Visual Studio Code to be very user friendly and efficient, which made it my preferred choice over NetBeans, another IDE I had used previously. Some of my favorite key shortcuts in Visual Studio Code are:
+I utilized Visual Studio Code for this project due to my prior experience with it in other classes, such as Big Data. I find Visual Studio Code to be very user friendly and efficient, which made it my preferred choice over NetBeans, another IDE I had used previously. Some of my favorite key shortcuts in Visual Studio Code are:
 
 - **Ctrl + L**: to clear the console.
 - **cmd + B**: to open the sidebar.
