@@ -29,10 +29,11 @@ jobs:
       run: sudo apt-get install -y xvfb
     - name: Start xvfb
       run: |
-        sudo Xvfb :99 -ac &
-        export DISPLAY=:99
-        sleep 3  # Wait for xvfb to start
+        sudo Xvfb :99 -screen 0 1024x768x24 &
+        echo "Started Xvfb"
     - name: Run tests with pytest
       run: |
         export DISPLAY=:99
+        echo "DISPLAY is set to $DISPLAY"
+        ps -ef | grep Xvfb  # Check if Xvfb is running
         pytest test_Coffee.py
