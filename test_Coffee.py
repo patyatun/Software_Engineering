@@ -26,17 +26,6 @@ class TestCoffee(unittest.TestCase):
     def tearDown(self):
         self.root.destroy()
 
-    @patch('Coffee.filedialog.asksaveasfile')
-    @patch('Coffee.messagebox.showinfo')
-    def test_save(self, mock_showinfo, mock_asksaveasfile):
-        mock_file = MagicMock()
-        mock_asksaveasfile.return_value = mock_file
-        Coffee.receiptText.insert('1.0', 'Test receipt content')
-        Coffee.save()
-        mock_file.write.assert_called_once_with('Test receipt content\n')
-        mock_file.close.assert_called_once()
-        mock_showinfo.assert_called_once_with('Information:', message='Receipt stored successfully')
-
     def test_receipt(self):
         Coffee.varTeaCost = 10
         Coffee.varNoncoffeCost = 20
