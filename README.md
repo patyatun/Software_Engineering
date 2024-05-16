@@ -34,7 +34,7 @@ For this project, I used Git to manage my code and track changes. I also have in
 You cand find the details of how I used Git here: [1. GIT](https://github.com/patyatun/Software_Engineering/tree/main/1.%20Git)
 
 ### 2. UML
-You can find the details here: [2. UML](https://github.com/patyatun/Software_Engineering/tree/main/2.%20UML)
+You can find the diagrams here: [2. UML](https://github.com/patyatun/Software_Engineering/tree/main/2.%20UML)
 1. Use-Case diagram: I created this diagram to represent the different interactions between users (actors) and the system. Also to visualize additional funtionalities beyond what is currently implemented in my code. It serves as a draft for a more advanced system.
 2. Sequence diagram: The diagram shows the different interactions between the user (employee) and the actions.
 3. Class diagram: I did this diagram using gleek.io to show how are related the different classes and their elements.
