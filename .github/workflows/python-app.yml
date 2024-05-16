@@ -25,7 +25,7 @@ jobs:
     # Paso para ejecutar pruebas unitarias
     - name: Run tests
       run: |
-        python -m unittest discover -s tests/ -p 'test_*.py' -v
+        python -m unittest discover -s . -p 'test_*.py' -v
         
     # Paso para construir el ejecutable
     - name: Build application
