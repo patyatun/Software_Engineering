@@ -55,13 +55,11 @@ I included unit tests to ensure the proper functioning of the Coffee.py file. Yo
 *test_grantotal*: This test evaluates the grantotal() function, which calculates the total costs of the different items in your coffee shop. Text inputs for each beverage are simulated, grantotal() is executed, and then the calculations against expected values are verified.
 
 I runned the tests and they all passed successfully. 
-![image](https://github.com/patyatun/Software_Engineering/assets/78238491/b9c28106-ecbf-4f01-bbdc-9062aba696de)
 
 ### 8. Continuous delivery: Pipeline
 I used GitHub Actions as a continuos integration and deployment (CI/CD) tool, I decided to use this one because allows me to automate custom workflowa directly from my GitHub repository. I created a configuration file named python-app.yml in the .github/workflows/ folder that defines the steps to follow in the pipeline. You can find it here: [.github](https://github.com/patyatun/Software_Engineering/tree/main/.github)
-The workflow is triggered everytime a push is made to the repository.
 
-You can see that the workflow is running correctly.
+The workflow is triggered everytime a push is made to the repository. You can see that the workflow is running correctly.
 ![image](https://github.com/patyatun/Software_Engineering/assets/78238491/edaa3b76-6df9-4505-bc2c-8bba7ae674b7)
 
 ### 9. IDE
