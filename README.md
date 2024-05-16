@@ -47,6 +47,15 @@ I've created a cheat sheet outlining the principles of how to write clean code a
 ### 6. Build Management
 ### 7. Unit tests
 I included unit tests to ensure the proper functioning of the Coffee.py file. You can find them in the file [test_Coffee.py](https://github.com/patyatun/Software_Engineering/blob/main/test_Coffee.py)
+
+*test_save*: This test verifies the functionality of the save() function. It uses the patch decorator to simulate calls to external functions like filedialog.asksaveasfile and messagebox.showinfo. Then it checks if the save() function is able to correctly write to a simulated file and show an information message.
+
+*test_receipt*: This test verifies the receipt() function, which should generate a receipt with totals for tea, non-coffee, and coffee. Values are set for the totals, and then it checks if the generated receipt content correctly contains the expected totals.
+
+*test_grantotal*: This test evaluates the grantotal() function, which calculates the total costs of the different items in your coffee shop. Text inputs for each beverage are simulated, grantotal() is executed, and then the calculations against expected values are verified.
+
+I runned the tests and they all passed successfully. This can also be verified in the screenshot attached in the folder.
+
 ### 8. Continuous delivery: Pipeline
 ### 9. IDE
 ### 10. DSL
