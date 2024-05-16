@@ -59,5 +59,16 @@ I runned the tests and they all passed successfully.
 
 ### 8. Continuous delivery: Pipeline
 ### 9. IDE
+I utilize Visual Studio Code for this project due to my prior experience with it in other classes, such as Big Data. I find Visual Studio Code to be very user friendly and efficient, which made it my preferred choice over NetBeans, another IDE I had used previously. Some of my favorite key shortcuts in Visual Studio Code are:
+
+- **Ctrl + L**: to clear the console.
+- **cmd + B**: to open the sidebar.
+- **cmd + /**: to comment or uncomment the selected lines of code.
+- **cmd + Shift + P**: to open the command palette.
+- **cmd + Shift + F**: to open the search across files.
+- **cmd + P**: to quickly open files by name.
+- **cmd + J**: toggles the panel (output, terminal, debug console)
+- **cmd + Shift + O**: display a list of symbols (functions, classes, variables) in the current file.
+
 ### 10. DSL
 ### 11. Functional programming
