@@ -1,38 +1,33 @@
-# Nombre del workflow
 name: Python application
 
-# Activadores del workflow
 on: [push]
 
-# Trabajos que se ejecutarán
 jobs:
 
   build:
 
-    # Sistema operativo en el que se ejecutará el trabajo
     runs-on: macos-latest
 
     steps:
-    # Paso para hacer checkout del código fuente
     - uses: actions/checkout@v3
     
-    # Paso para configurar Python
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9' # Versión de Python a utilizar
+        python-version: '3.9'
         
-    # Paso para ejecutar pruebas unitarias
+    - name: Install PyInstaller
+      run: |
+        python -m pip install pyinstaller
+        
     - name: Run tests
       run: |
         python -m unittest discover -s . -p 'test_*.py' -v
         
-    # Paso para construir el ejecutable
     - name: Build application
       run: |
         pyinstaller Coffee.py
         
-    # Paso para empaquetar artefactos
     - name: Package artifacts
       uses: actions/upload-artifact@v3
       with:
