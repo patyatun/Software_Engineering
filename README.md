@@ -55,7 +55,7 @@ I included unit tests to ensure the proper functioning of the Coffee.py file. Yo
 *test_grantotal*: This test evaluates the grantotal() function, which calculates the total costs of the different items in your coffee shop. Text inputs for each beverage are simulated, grantotal() is executed, and then the calculations against expected values are verified.
 
 I runned the tests and they all passed successfully. 
-![image](https://github.com/patyatun/Software_Engineering/assets/78238491/c8bd0de1-0bd0-4e48-b779-8adfe9b668b2)
+![image](https://github.com/patyatun/Software_Engineering/assets/78238491/b9c28106-ecbf-4f01-bbdc-9062aba696de)
 
 ### 8. Continuous delivery: Pipeline
 ### 9. IDE
