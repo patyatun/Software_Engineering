@@ -1,4 +1,4 @@
-name: Unit tests for OurCoffee
+name: Unit tests for Coffee Shop System
 
 on:
   push:
@@ -21,7 +21,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -U pip
-          pip install unittest
 
       - name: Run unit tests
         run: python test_Coffee.py
