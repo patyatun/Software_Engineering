@@ -44,7 +44,24 @@ You can find the diagrams here: [2. UML](https://github.com/patyatun/Software_En
 ### 5. Clean Code Development
 I've created a cheat sheet outlining the principles of how to write clean code and make a concious effort to follow this guideline while writing my code. You can find the cheat sheet here: [4. Clean Code Development](https://github.com/patyatun/Software_Engineering/tree/main/4.%20Clean%20Code%20Development)
 
-### 6. Build Management
+### 6. & 8. Build Management & Continuos Delivery
+
+I used GitHub Actions as a continuos integration and deployment (CI/CD) tool, I decided to use this one because allows me to automate custom workflowa directly from my GitHub repository. 
+
+#### Build Management
+While developing this project I learned that effective build management is important to ensure maintainable code quality. In this project I used PyInstaller, by adding it to my GitHub Action workflow I automated the process of building and packaging my python app, making it easier to run on different systems.
+
+Additionally, I included unit testing in the build process, ensuring that my code works as expected. The workflow automatically runs the unit tests using *python -m unittest test_Coffee.py* before the build step, catching any potential issues early.
+
+#### Continuous delivery: Pipeline
+Continuous delivery is a software development practice that enables the automatic deployment or code changes to production environments. To achieve this, I implemented a continuous delivery pipeline using GitHub Actiones.
+
+Configuring the pipeline was challenging, after several iterations I successfully set up a workflow that automatically build, tests, and deploys my app to GitHub Pages whenever changes are pushed to the repository.
+
+HitHub Pages allows developers to host their projects directly from a GitHub repository. By using it, I can easily share and showcase my development with others, without needing a separate hosting solution.
+
+To see the functionality of my build management and continuos delivery pipeline you can find the configuration file here: [python-app.yml](https://github.com/patyatun/Software_Engineering/tree/main/.github/workflows) and some details here: [6. CI/CD]()
+
 ### 7. Unit tests
 I included unit tests to ensure the proper functioning of the Coffee.py file. You can find them in the file [test_Coffee.py](https://github.com/patyatun/Software_Engineering/blob/main/test_Coffee.py)
 
@@ -56,11 +73,6 @@ I included unit tests to ensure the proper functioning of the Coffee.py file. Yo
 
 I runned the tests and they all passed successfully. 
 
-### 8. Continuous delivery: Pipeline
-I used GitHub Actions as a continuos integration and deployment (CI/CD) tool, I decided to use this one because allows me to automate custom workflowa directly from my GitHub repository. I created a configuration file named python-app.yml in the .github/workflows/ folder that defines the steps to follow in the pipeline. You can find it here: [.github](https://github.com/patyatun/Software_Engineering/tree/main/.github)
-
-The workflow is triggered everytime a push is made to the repository. You can see that the workflow is running correctly.
-![image](https://github.com/patyatun/Software_Engineering/assets/78238491/edaa3b76-6df9-4505-bc2c-8bba7ae674b7)
 
 ### 9. IDE
 I utilized Visual Studio Code for this project due to my prior experience with it in other classes, such as Big Data. I find Visual Studio Code to be very user friendly and efficient, which made it my preferred choice over NetBeans, another IDE I had used previously. Some of my favorite key shortcuts in Visual Studio Code are:
