@@ -55,10 +55,8 @@ jobs:
       with:
         name: coffee-app
         
-    - name: Deploy to server
-      env:
-        SERVER_IP: ${{ secrets.SERVER_IP }}
-        SERVER_USER: ${{ secrets.SERVER_USER }}
-        SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
-      run: |
-        scp -r coffee-app $SERVER_USER@$SERVER_IP:/path/to/deploy/directory
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: coffee-app
