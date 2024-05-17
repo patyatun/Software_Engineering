@@ -1,68 +1,62 @@
 import unittest
-from tkinter import Tk
 
-class TestCoffeeSystem(unittest.TestCase):
-    def setUp(self):
-        self.root = Tk()
-        self.root.withdraw()  # Ocultar la ventana de la GUI
+def calculate_tea_cost(yuzu_qty, mint_ginger_qty):
+    return round((yuzu_qty * 3.5) + (mint_ginger_qty * 3.5), 2)
 
-    def test_tea_cost(self):
-        # Valores de prueba
-        t_Yuzu = 2
-        t_HintGinger = 1
-        t_JujubeGoji = 3
-        t_LycheeOolong = 0
-        t_GuavaJasmin = 1
-        t_BlackLemon = 2
-        t_MatchaLemon = 1
+def calculate_noncoffee_cost(chocolate_qty, matcha_latte_qty):
+    return round((chocolate_qty * 4) + (matcha_latte_qty * 4.5), 2)
 
-        # Cálculo esperado
-        expected_tea_cost = round((t_Yuzu * 3.5) + (t_HintGinger * 3.5) + (t_JujubeGoji * 3.8) + (t_LycheeOolong * 4.5) + (t_GuavaJasmin * 4.5) + (t_BlackLemon * 4.5) + (t_MatchaLemon * 4.5), 2)
+def calculate_coffee_cost(espresso_qty, double_espresso_qty):
+    return round((espresso_qty * 2) + (double_espresso_qty * 3), 2)
 
-        # Llamar a la función de cálculo
-        varTeaCost = round((t_Yuzu * 3.5) + (t_HintGinger * 3.5) + (t_JujubeGoji * 3.8) + (t_LycheeOolong * 4.5) + (t_GuavaJasmin * 4.5) + (t_BlackLemon * 4.5) + (t_MatchaLemon * 4.5), 2)
+def calculate_subtotal(varTeaCost, varNoncoffeeCost, varCoffeeCost):
+    return round(varTeaCost + varNoncoffeeCost + varCoffeeCost, 2)
 
-        # Verificar el resultado
-        self.assertEqual(varTeaCost, expected_tea_cost)
+def calculate_iva(subtotal):
+    return round(subtotal * 0.16, 2)
 
-    def test_non_coffee_cost(self):
-        # Valores de prueba
-        t_Chocolate = 3
-        t_MatchaLatte = 2
-        t_UbeOatLatte = 1
+def calculate_total(subtotal, iva):
+    return round(subtotal + iva, 2)
 
-        # Cálculo esperado
-        expected_non_coffee_cost = round((t_Chocolate * 4) + (t_MatchaLatte * 4.5) + (t_UbeOatLatte * 4.8), 2)
+#unit tests
 
-        # Llamar a la función de cálculo
-        varNoncoffeCost = round((t_Chocolate * 4) + (t_MatchaLatte * 4.5) + (t_UbeOatLatte * 4.8), 2)
+class TestCoffeeCalculations(unittest.TestCase):
 
-        # Verificar el resultado
-        self.assertEqual(varNoncoffeCost, expected_non_coffee_cost)
+    def test_calculate_tea_cost(self):
+        self.assertEqual(calculate_tea_cost(1, 1), 7.0)
+        self.assertEqual(calculate_tea_cost(0, 2), 7.0)
+        self.assertEqual(calculate_tea_cost(3, 0), 10.5)
+        self.assertEqual(calculate_tea_cost(0, 0), 0.0)
 
-    def test_coffee_cost(self):
-        # Valores de prueba
-        t_Espresso = 1
-        t_DoubleEspresso = 2
-        t_Americano = 3
-        t_Capuccino = 0
-        t_FlatWhite = 1
-        t_Latte = 2
-        t_Mocha = 1
-        t_BiscoffLatte = 0
-        t_DalgonaLatte = 1
-        t_BlackSesamLatte = 2
-        t_InjeolmiOatLatte = 0
-        t_PistacchioOatLatte = 1
+    def test_calculate_noncoffee_cost(self):
+        self.assertEqual(calculate_noncoffee_cost(1, 1), 8.5)
+        self.assertEqual(calculate_noncoffee_cost(2, 0), 8.0)
+        self.assertEqual(calculate_noncoffee_cost(0, 2), 9.0)
+        self.assertEqual(calculate_noncoffee_cost(0, 0), 0.0)
 
-        # Cálculo esperado
-        expected_coffee_cost = round((t_Espresso * 2) + (t_DoubleEspresso * 3) + (t_Americano * 2.5) + (t_Capuccino * 3.5) + (t_FlatWhite * 4) + (t_Latte * 3.8) + (t_Mocha * 4.5) + (t_BiscoffLatte * 4.5) + (t_DalgonaLatte * 4.9) + (t_BlackSesamLatte * 4.8) + (t_InjeolmiOatLatte * 5.2) + (t_PistacchioOatLatte * 5.4), 2)
+    def test_calculate_coffee_cost(self):
+        self.assertEqual(calculate_coffee_cost(1, 1), 5.0)
+        self.assertEqual(calculate_coffee_cost(2, 0), 4.0)
+        self.assertEqual(calculate_coffee_cost(0, 2), 6.0)
+        self.assertEqual(calculate_coffee_cost(0, 0), 0.0)
 
-        # Llamar a la función de cálculo
-        varCoffeeCost = round((t_Espresso * 2) + (t_DoubleEspresso * 3) + (t_Americano * 2.5) + (t_Capuccino * 3.5) + (t_FlatWhite * 4) + (t_Latte * 3.8) + (t_Mocha * 4.5) + (t_BiscoffLatte * 4.5) + (t_DalgonaLatte * 4.9) + (t_BlackSesamLatte * 4.8) + (t_InjeolmiOatLatte * 5.2) + (t_PistacchioOatLatte * 5.4), 2)
+    def test_calculate_subtotal(self):
+        self.assertEqual(calculate_subtotal(7.0, 8.5, 5.0), 20.5)
+        self.assertEqual(calculate_subtotal(0.0, 0.0, 0.0), 0.0)
+        self.assertEqual(calculate_subtotal(3.5, 4.5, 2.0), 10.0)
+        self.assertEqual(calculate_subtotal(7.0, 7.0, 7.0), 21.0)
 
-        # Verificar el resultado
-        self.assertEqual(varCoffeeCost, expected_coffee_cost)
+    def test_calculate_iva(self):
+        self.assertEqual(calculate_iva(20.5), 3.28)
+        self.assertEqual(calculate_iva(0.0), 0.0)
+        self.assertEqual(calculate_iva(10.0), 1.6)
+        self.assertEqual(calculate_iva(21.0), 3.36)
+
+    def test_calculate_total(self):
+        self.assertEqual(calculate_total(20.5, 3.28), 23.78)
+        self.assertEqual(calculate_total(0.0, 0.0), 0.0)
+        self.assertEqual(calculate_total(10.0, 1.6), 11.6)
+        self.assertEqual(calculate_total(21.0, 3.36), 24.36)
 
 if __name__ == '__main__':
     unittest.main()
