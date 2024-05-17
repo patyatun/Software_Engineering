@@ -43,7 +43,7 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: coffee-app
+        name: dist
         path: dist
         
   deploy:
@@ -54,10 +54,10 @@ jobs:
     - name: Download artifacts
       uses: actions/download-artifact@v3
       with:
-        name: coffee-app
+        name: dist
         
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
-        folder: coffee-app
+        folder: dist
