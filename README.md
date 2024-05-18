@@ -1,31 +1,29 @@
 # Software Engineering
-## Our Coffee
+## Our Coffee: Cafeteria Management System
 
-This project is the first version of the management system for Our Coffee. 
-The main goal is to create a user friendly tool for recording and managing the orders.
+This project is the first version of the management system for Our Coffee. This is a user friendly tool design for the order processing and record keeping for a coffee shop. This system calculate the costs of the orders and generate receipts that can be saved in a txt file. All through an user interface (GUI).
+
 The project was developed covering the points proposed in class.
 
-### System description
+### 0. System description
 
-### Programming language
+You can find some screenshots of the interface here: [0. System description]()
+
+*Programming language*
 The system is being developed in Python using the tkinter library due to its simplicity and my personal experience.
 
-### GitHub repository
-The complete source and documentation can be found in the following GitHub Repository: https://github.com/patyatun/Software_Engineering.git
-
-### Requirements
+*Requirements*
 - Python 3.x
 - Tkinter (usually included in standard Python installations)
 
-### Execution instructions
+*Execution instructions*
 1. Clone or download the repository to your local machine.
 2. Make sure you have Python 3.x installed on your system.
 3. Run the Coffee.py file to start.
-4. Select the desired quantity of each type of beverages.
-5. Click the "Total" button to get the total order cost.
-6. Click the "Receipt" button to get the receipt with the details.
-7. Optionally, click the "Save" button to save the order receipt to a text file.
-   
+5. Select the desired quantity of each type of beverages.
+6. Click the "Total" button to get the total order cost.
+7. Click the "Receipt" button to get the receipt with the details.
+8. Optionally, click the "Save" button to save the order receipt to a text file.
 
 ### 1. Git
 Before this project, I had only used GitHub's website for simple tasks like creating repositories, making commits and opening pull requests. This project was my first time using Git on my computer, which helped me understand version control better. I now feel more confident in managing bigger projects with Git.
