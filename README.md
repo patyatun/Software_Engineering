@@ -9,15 +9,13 @@ The project was developed covering the points proposed in class.
 
 You can find some screenshots of the interface here: [0. System description](https://github.com/patyatun/Software_Engineering/tree/main/0.%20System%20description)
 
-- Programming language
-
 The system is being developed in Python using the tkinter library due to its simplicity and my personal experience.
 
-- Requirements
+Requirements:
 - Python 3.x
 - Tkinter (usually included in standard Python installations)
 
-- Execution instructions
+Execution instructions:
 1. Clone or download the repository to your local machine.
 2. Make sure you have Python 3.x installed on your system.
 3. Run the Coffee.py file to start.
