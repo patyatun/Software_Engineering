@@ -1,0 +1,64 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 @startuml\
+!define RECTANGLE class\
+\
+RECTANGLE Management_System_Domain \{\
+  Core Domain\
+\}\
+\
+RECTANGLE Orders_and_Payment_Management_Domain \{\
+  Core Domain\
+\}\
+\
+RECTANGLE Menu_Management_Domain \{\
+  Core Domain\
+\}\
+\
+RECTANGLE Supply_and_Logistics_Domain \{\
+  Supporting Domain\
+\}\
+\
+RECTANGLE HR_Domain \{\
+  Supporting Domain\
+\}\
+\
+RECTANGLE Strategic_Partner_Domain \{\
+  Supporting Domain\
+\}\
+\
+RECTANGLE Quality_Management_Domain \{\
+  Supporting Domain\
+\}\
+\
+RECTANGLE Marketing_and_Sales_Domain \{\
+  General Domain\
+\}\
+\
+RECTANGLE Customer_Experience_Domain \{\
+  General Domain\
+\}\
+\
+RECTANGLE Accounting_Domain \{\
+  General Domain\
+\}\
+\
+RECTANGLE Legal_Domain \{\
+  General Domain\
+\}\
+\
+Management_System_Domain --> Orders_and_Payment_Management_Domain : Customer-Supplier\
+Management_System_Domain --> Menu_Management_Domain : Partnership\
+Menu_Management_Domain --> Supply_and_Logistics_Domain : Conformist\
+Marketing_and_Sales_Domain --> Customer_Experience_Domain : Anti-Corruption Layer\
+Accounting_Domain --> Legal_Domain : Published Language\
+Quality_Management_Domain --> HR_Domain : Published Language\
+Strategic_Partner_Domain --> Management_System_Domain : Partnership\
+Strategic_Partner_Domain --> Supply_and_Logistics_Domain : Partnership\
+Management_System_Domain --> HR_Domain : Partnership\
+@enduml}
