@@ -3,6 +3,7 @@ from tkinter import Tk, Frame, Label, LabelFrame, Text, Entry, Button, Checkbutt
 from tkinter import filedialog, messagebox
 import random
 import time
+import secrets
 
 #function to save the receipt to a file
 def save_receipt():
@@ -72,7 +73,7 @@ def update_cost_entry(entry, value):
 #function to create the receipt content
 def create_receipt():
     receipt_text.delete(1.0, END)
-    receipt_number = f"Num{random.randint(1, 1000)}"
+    receipt_number = f"Num{secrets.randbelow(1000)+1}"
     date = time.strftime('%d-%m-%y')
     
     receipt_text.insert(END, f'Bill-> {receipt_number}\t\t\t Date: {date}\n')
