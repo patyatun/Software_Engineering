@@ -9,8 +9,8 @@ def calculate_noncoffee_cost(chocolate_qty, matcha_latte_qty):
 def calculate_coffee_cost(espresso_qty, double_espresso_qty):
     return round((espresso_qty * 2) + (double_espresso_qty * 3), 2)
 
-def calculate_subtotal(varTeaCost, varNoncoffeeCost, varCoffeeCost):
-    return round(varTeaCost + varNoncoffeeCost + varCoffeeCost, 2)
+def calculate_subtotal(var_tea_cost, var_noncoffee_cost, var_coffee_cost):
+    return round(var_tea_cost + var_noncoffee_cost + var_coffee_cost, 2)
 
 def calculate_iva(subtotal):
     return round(subtotal * 0.16, 2)
