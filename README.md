@@ -40,6 +40,22 @@ You can find the diagrams here: [2. UML](https://github.com/patyatun/Software_En
    
 ### 3. DDD
 ### 4. Metrics
+You can find the complete analysis here: [SonarCloud analysis](https://sonarcloud.io/project/overview?id=patyatun_Software_Engineering)
+
+To ensure the quality of my code, I integrated SonarCloud into my project, allowing me to continuously analyze the code for potential issues. Initially, my main code had some issues and warnings. However, I worked through each issue, implementing the necessary fixes and improvements. Through this iterative process, I was able to pass all SonarCloud code quality checks.
+
+![image](https://github.com/patyatun/Software_Engineering/assets/78238491/09804fba-f5ac-41cf-8349-3be884fbd3e3)
+
+For my 4 .py files (Coffee.py, test_Coffee.py, Funtional_programming.py and DSL_Coffee.py) I was able to achieve these results:
+
+- Quality Gate: Passed
+- Reliability: Rating A
+- Security: Rating A
+- Security Review: Rating A
+- Maintainability: Rating A
+- Duplications: 0%
+- Issues: 0
+
 ### 5. Clean Code Development
 I've created a cheat sheet outlining the principles of how to write clean code and make a concious effort to follow this guideline while writing my code. You can find the cheat sheet here: [5. Clean Code Development](https://github.com/patyatun/Software_Engineering/tree/main/4.%20Clean%20Code%20Development)
 
