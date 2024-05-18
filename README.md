@@ -57,7 +57,7 @@ For my 4 .py files (Coffee.py, test_Coffee.py, Funtional_programming.py and DSL_
 - Issues: 0
 
 ### 5. Clean Code Development
-I've created a cheat sheet outlining the principles of how to write clean code and make a concious effort to follow this guideline while writing my code. You can find the cheat sheet here: [5. Clean Code Development](https://github.com/patyatun/Software_Engineering/tree/main/4.%20Clean%20Code%20Development)
+I've created a cheat sheet outlining the principles of how to write clean code and make a concious effort to follow this guideline while writing my code. You can find the cheat sheet here: [5. Clean Code Development](https://github.com/patyatun/Software_Engineering/blob/main/5.%20Clean%20Code%20Development/CleanCode_cheat_sheet.pdf)
 
 Following the principles in my own Clean Code Development cheat sheet, these are some examples of clean code in my code:
 
