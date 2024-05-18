@@ -10,6 +10,7 @@ The project was developed covering the points proposed in class.
 You can find some screenshots of the interface here: [0. System description](https://github.com/patyatun/Software_Engineering/tree/main/0.%20System%20description)
 
 **Programming language**
+
 The system is being developed in Python using the tkinter library due to its simplicity and my personal experience.
 
 **Requirements**
