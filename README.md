@@ -65,14 +65,22 @@ To see the functionality of my build management and continuos delivery pipeline 
 ### 7. Unit tests
 I included unit tests to ensure the proper functioning of the Coffee.py file. You can find them in the file [test_Coffee.py](https://github.com/patyatun/Software_Engineering/blob/main/test_Coffee.py)
 
-*test_save*: This test verifies the functionality of the save() function. It uses the patch decorator to simulate calls to external functions like filedialog.asksaveasfile and messagebox.showinfo. Then it checks if the save() function is able to correctly write to a simulated file and show an information message.
+I runned the tests and all passed successfully. 
+![image](https://github.com/patyatun/Software_Engineering/assets/78238491/31a35eb5-41dc-4538-b3c4-9e0fbc1b1090)
 
-*test_receipt*: This test verifies the receipt() function, which should generate a receipt with totals for tea, non-coffee, and coffee. Values are set for the totals, and then it checks if the generated receipt content correctly contains the expected totals.
+The unit tests are organized in the *TestCoffeeCalculations* class. Each test method follows a naming convention starting with *test* and tests a specific function or scenario. Each function is tested with multiple test cases, ensuring that the calculations are accurate and consistent across varios input combinations, including edge cases such as zero quantitites.
 
-*test_grantotal*: This test evaluates the grantotal() function, which calculates the total costs of the different items in your coffee shop. Text inputs for each beverage are simulated, grantotal() is executed, and then the calculations against expected values are verified.
+*test_calculate_tea_cost*: This test verifies the calculation of the cost of tea beverages.
 
-I runned the tests and they all passed successfully. 
+*test_calculate_noncoffee_cost*: This test verifies the calculation of the cost of non coffee beverages.
 
+*test_calculate_coffee_cost*: This test verifies the calculation of the cost of coffee beverages.
+
+*test_calculate_subtotal*: This test verifies the calculation of the subtotal cost by summing the totals of tea, non coffee and coffee.
+
+*test_calculate_iva*: This verifies the calculation of the value added tax IVA based on the subtotal cost.
+
+*test_calculate_total*: This verifies the total cost by adding the subtotal cost and the IVA.
 
 ### 9. IDE
 I utilized Visual Studio Code for this project due to my prior experience with it in other classes, such as Big Data. I find Visual Studio Code to be very user friendly and efficient, which made it my preferred choice over NetBeans, another IDE I had used previously. Some of my favorite key shortcuts in Visual Studio Code are:
