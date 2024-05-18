@@ -7,7 +7,7 @@ The project was developed covering the points proposed in class.
 
 ### 0. System description
 
-You can find some screenshots of the interface here: [0. System description]()
+You can find some screenshots of the interface here: [0. System description](https://github.com/patyatun/Software_Engineering/tree/main/0.%20System%20description)
 
 *Programming language*
 The system is being developed in Python using the tkinter library due to its simplicity and my personal experience.
@@ -40,7 +40,7 @@ You can find the diagrams here: [2. UML](https://github.com/patyatun/Software_En
 ### 3. DDD
 ### 4. Metrics
 ### 5. Clean Code Development
-I've created a cheat sheet outlining the principles of how to write clean code and make a concious effort to follow this guideline while writing my code. You can find the cheat sheet here: [4. Clean Code Development](https://github.com/patyatun/Software_Engineering/tree/main/4.%20Clean%20Code%20Development)
+I've created a cheat sheet outlining the principles of how to write clean code and make a concious effort to follow this guideline while writing my code. You can find the cheat sheet here: [5. Clean Code Development](https://github.com/patyatun/Software_Engineering/tree/main/4.%20Clean%20Code%20Development)
 
 ### 6. & 8. Build Management & Continuos Delivery
 
