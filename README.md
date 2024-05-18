@@ -27,10 +27,10 @@ The system is being developed in Python using the tkinter library due to its sim
 8. Optionally, click the "Save" button to save the order receipt to a text file.
 
 ### 1. Git
+You cand find the details of how I used Git here: [1. GIT](https://github.com/patyatun/Software_Engineering/tree/main/1.%20Git)
 Before this project, I had only used GitHub's website for simple tasks like creating repositories, making commits and opening pull requests. This project was my first time using Git on my computer, which helped me understand version control better. I now feel more confident in managing bigger projects with Git.
 
 For this project, I used Git to manage my code and track changes. I also have integrated draw.io with GitHub to directly add and manage diagrams from there. Morever, I connected SonarCloud with GitHub to perform a review of the metrics.
-You cand find the details of how I used Git here: [1. GIT](https://github.com/patyatun/Software_Engineering/tree/main/1.%20Git)
 
 ### 2. UML
 You can find the diagrams here: [2. UML](https://github.com/patyatun/Software_Engineering/tree/main/2.%20UML)
@@ -68,7 +68,6 @@ Following the principles in my own Clean Code Development cheat sheet, these are
 5. Documentation: I wrote explanatory comments in the functions.
 
 ### 6. & 8. Build Management & Continuos Delivery
-
 I used GitHub Actions as a continuos integration and deployment (CI/CD) tool, I decided to use this one because allows me to automate custom workflowa directly from my GitHub repository. To see the functionality of my build management and continuos delivery pipeline you can find the configuration file here: [python-app.yml](https://github.com/patyatun/Software_Engineering/tree/main/.github/workflows) and some details here: [6. CI/CD]()
 
 #### Build Management
