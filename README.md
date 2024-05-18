@@ -65,7 +65,7 @@ To see the functionality of my build management and continuos delivery pipeline 
 I included unit tests to ensure the proper functioning of the Coffee.py file. You can find them in the file [test_Coffee.py](https://github.com/patyatun/Software_Engineering/blob/main/test_Coffee.py)
 
 I runned the tests and all passed successfully. 
-![image](https://github.com/patyatun/Software_Engineering/assets/78238491/31a35eb5-41dc-4538-b3c4-9e0fbc1b1090)
+![image](https://github.com/patyatun/Software_Engineering/assets/78238491/f6e0a0d9-d0a5-4eed-a1eb-651f65219be9)
 
 The unit tests are organized in the *TestCoffeeCalculations* class. Each test method follows a naming convention starting with *test* and tests a specific function or scenario. Each function is tested with multiple test cases, ensuring that the calculations are accurate and consistent across varios input combinations, including edge cases such as zero quantitites.
 
