@@ -59,6 +59,14 @@ For my 4 .py files (Coffee.py, test_Coffee.py, Funtional_programming.py and DSL_
 ### 5. Clean Code Development
 I've created a cheat sheet outlining the principles of how to write clean code and make a concious effort to follow this guideline while writing my code. You can find the cheat sheet here: [5. Clean Code Development](https://github.com/patyatun/Software_Engineering/tree/main/4.%20Clean%20Code%20Development)
 
+Following the principles in my own Clean Code Development cheat sheet, these are some examples of clean code in my code:
+
+1. Readability: In my code I used functions like *calculate_tea_cost*, *calculate_subtotal*, *calculate_total* that are clearlye named and perform exactly what their names suggest.
+2. Keep it simple: I keep the calculation logic and divided into small specific functions, for example *calculate_noncoffee_cost* and *calculate_coffe_cost*
+3. Be consistent: I maintained a consistent naming pattern that makes the code more predictable and easier to follow, also I use verbs for function names like *calculate_grand_total* and *create_receipt*
+4. Avoid duplication: I made functions to avoid code duplications, e.g. *update_cost_entry* function is used to update the values of the cost entry fiedls.
+5. Documentation: I wrote explanatory comments in the functions.
+
 ### 6. & 8. Build Management & Continuos Delivery
 
 I used GitHub Actions as a continuos integration and deployment (CI/CD) tool, I decided to use this one because allows me to automate custom workflowa directly from my GitHub repository. To see the functionality of my build management and continuos delivery pipeline you can find the configuration file here: [python-app.yml](https://github.com/patyatun/Software_Engineering/tree/main/.github/workflows) and some details here: [6. CI/CD]()
