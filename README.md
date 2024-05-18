@@ -68,7 +68,7 @@ Following the principles in my own Clean Code Development cheat sheet, these are
 5. Documentation: I wrote explanatory comments in the functions.
 
 ### 6. & 8. Build Management & Continuos Delivery
-I used GitHub Actions as a continuos integration and deployment (CI/CD) tool, I decided to use this one because allows me to automate custom workflowa directly from my GitHub repository. To see the functionality of my build management and continuos delivery pipeline you can find the configuration file here: [python-app.yml](https://github.com/patyatun/Software_Engineering/tree/main/.github/workflows) and some details here: [6. CI/CD]()
+I used GitHub Actions as a continuos integration and deployment (CI/CD) tool, I decided to use this one because allows me to automate custom workflowa directly from my GitHub repository. To see the functionality of my build management and continuos delivery pipeline you can find the configuration file here: [python-app.yml](https://github.com/patyatun/Software_Engineering/tree/main/.github/workflows), my workflows runs here: [Actions](https://github.com/patyatun/Software_Engineering/actions) and some screenshots here: [6. & 8. CI/CD](https://github.com/patyatun/Software_Engineering/tree/main/6.%20%26%208.%20CICD)
 
 #### Build Management
 While developing this project I learned that effective build management is important to ensure maintainable code quality. In this project I used PyInstaller, by adding it to my GitHub Action workflow I automated the process of building and packaging my python app, making it easier to run on different systems.
