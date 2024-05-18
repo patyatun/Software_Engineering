@@ -45,7 +45,7 @@ I've created a cheat sheet outlining the principles of how to write clean code a
 
 ### 6. & 8. Build Management & Continuos Delivery
 
-I used GitHub Actions as a continuos integration and deployment (CI/CD) tool, I decided to use this one because allows me to automate custom workflowa directly from my GitHub repository. 
+I used GitHub Actions as a continuos integration and deployment (CI/CD) tool, I decided to use this one because allows me to automate custom workflowa directly from my GitHub repository. To see the functionality of my build management and continuos delivery pipeline you can find the configuration file here: [python-app.yml](https://github.com/patyatun/Software_Engineering/tree/main/.github/workflows) and some details here: [6. CI/CD]()
 
 #### Build Management
 While developing this project I learned that effective build management is important to ensure maintainable code quality. In this project I used PyInstaller, by adding it to my GitHub Action workflow I automated the process of building and packaging my python app, making it easier to run on different systems.
@@ -58,8 +58,6 @@ Continuous delivery is a software development practice that enables the automati
 Configuring the pipeline was challenging, after several iterations I successfully set up a workflow that automatically build, tests, and deploys my app to GitHub Pages whenever changes are pushed to the repository.
 
 HitHub Pages allows developers to host their projects directly from a GitHub repository. By using it, I can easily share and showcase my development with others, without needing a separate hosting solution.
-
-To see the functionality of my build management and continuos delivery pipeline you can find the configuration file here: [python-app.yml](https://github.com/patyatun/Software_Engineering/tree/main/.github/workflows) and some details here: [6. CI/CD]()
 
 ### 7. Unit tests
 I included unit tests to ensure the proper functioning of the Coffee.py file. You can find them in the file [test_Coffee.py](https://github.com/patyatun/Software_Engineering/blob/main/test_Coffee.py)
@@ -94,11 +92,11 @@ I utilized Visual Studio Code for this project due to my prior experience with i
 - **cmd + Shift + O**: display a list of symbols (functions, classes, variables) in the current file.
 
 ### 10. DSL
-As an additional feature to the management system, I implemented a Domain Specific Language to demonstrate how a custom language can be used to define and process the orders in a structured and readable manner. While not directly integrated into the main application, this DSL helped me understand the concept of create a domain specific language.
+You can find the code here: [DSL](https://github.com/patyatun/Software_Engineering/blob/main/DSL_Coffee.py)
+
+By leveraging a DSL, users can express coffee orders in an intuitive way, without having to navigate through a GUI. As an additional feature to the management system, I implemented a Domain Specific Language to demonstrate how a custom language can be used to define and process the orders in a structured and readable manner. While not directly integrated into the main application, this DSL helped me understand the concept of create a domain specific language.
 
 The DSL is defined using regular expressions using re module in Python. The grammar rules speify the structure of a valid coffee order, consisting of an "Order:" keyword followed by a list of order items. Each order item is composed of a quantity and a product type (Tea, Non-Coffee, or Coffee). The *parse_order* function takes a string representing an order and analizes it according to the defined grammar rules. It then calculates the total cost based on the quantities and corresponding product prices.
-
-By leveraging a DSL, users can express coffee orders in an intuitive way, without having to navigate through a GUI. You can find the code here: [DSL](https://github.com/patyatun/Software_Engineering/blob/main/DSL_Coffee.py)
 
 ### 11. Functional programming
 Following the guidelines, I wrote a code to apply the principles of functional programming. You can find the file here: [functional_programming.py](https://github.com/patyatun/Software_Engineering/blob/main/Functional_programming.py)
