@@ -38,6 +38,15 @@ You can find the diagrams here: [2. UML](https://github.com/patyatun/Software_En
 3. Class diagram: I did this diagram using gleek.io to show how are related the different classes and their elements.
    
 ### 3. DDD
+You can find the diagrams here [3. DDD](https://github.com/patyatun/Software_Engineering/tree/main/3.%20DDD) 
+
+While doing the DDD I was able to understand and model the business domains, fostering the connection between the code and the real world concepts and processes of the domain.
+
+1. Event storming: I started with an event storming to explore and identify the key events and processes that occur within the coffee shop domain.
+2. Domain identification: Based on the insights gathered form the event storming, I recognized and separated the different domains.
+3. Core Domain Chart: This chart helped me map the domains based on their complexity and business differentiation, so it's easier to focus the attention on the most critical and differentiating aspects of the system.
+4. Context map: This helped me understand the relationships and interactions between the system and the external world. For this part, I utilized PlantUML to create the diagram, you can find the source code in the folder.
+
 ### 4. Metrics
 You can find the complete analysis here: [SonarCloud analysis](https://sonarcloud.io/project/overview?id=patyatun_Software_Engineering)
 
